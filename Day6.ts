@@ -40,14 +40,15 @@ type param2 = {
 // 물론 문자제거 하는 방법을 모른다면 구글검색이 필요합니다. 
 
 type param3 = (a:string) => string
-type param4 = (b:string) => number
 
-function cutZero(a){
-    
+let cutZero :param3 = function cutZero(a){
+    let result = a.replace(/^0+/g, "")
+    return result
 }
 
-function removeDash(b){
-
+function removeDash(b:string) :number{
+    let result = b.replace(/-/g, "")
+    return parseFloat(result)
 }
 
 // (숙제3) 함수에 함수를 집어넣고 싶습니다.
@@ -59,3 +60,8 @@ function removeDash(b){
 // 이 함수는 어떻게 만들면 될까요?
 // 둘째 파라미터엔 cutZero, 셋째 파라미터엔 removeDash 라는 함수들만 입력할 수 있게 파라미터의 타입도 지정해봅시다.
 
+function param(a, fun2, fun3){
+    let result = fun2(a)
+    let result2 = fun3(result)
+    console.log(result2)
+}
