@@ -1,0 +1,36 @@
+<!-- (JS문법시간) class 키워드 알아보기 -->
+<!-- (JS 문법시간) prototype 문법 짚어보기 -->
+
+<script>
+  // 비슷한 object들 쉽게 만들고 싶을 때
+  // class는 object 뽑는 기계일 뿐
+  // 부모
+  function 기계(구멍) {
+    // 새로 생성된 object
+    this.q = 구멍;
+    this.w = 'snowball';
+  }
+
+  기계.prototype.name = 'Lee';
+
+  // 자식
+  var nunu = new 기계('consume');
+  var garen = new 기계('strike');
+
+  class Hero {
+    constructor(구멍) {
+      this.q = 구멍;
+      this.w = 'snowball';
+    }
+  }
+  new Hero();
+
+  let array = [1, 2, 3];
+  let array = new Array(4, 2, 1);
+
+  // Array라는 부모 유전자에 기록이 되어있기 때문
+  array.sort();
+
+  // 유전자 수정
+  Array.prototype.함수 = function () {};
+</script>
