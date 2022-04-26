@@ -54,3 +54,12 @@ function 함수(x : string) {
 let results = 함수(data)
 
 // (숙제3) class 를 수정해봅시다.
+
+class Persons <T> {
+    name;
+    constructor(a){
+      this.name = a;
+    }
+  }
+  let f = new Persons<string>('어쩌구');
+  f.name //any 타입이 되었넹 
