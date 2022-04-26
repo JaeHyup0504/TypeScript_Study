@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import {RootState, increment} from './index'
 
-import './App.css';
-
 let a :string = 'Lee'
 // let 박스:JSX.Element = <div></div>
 
