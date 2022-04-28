@@ -9,21 +9,21 @@ function 함수(...x :[number, string]) {
 }
 함수(1, "Lee")
 
-let arr = [1,2,3];
-let arr2 : [number, number, ...number[]] = [4,5, ...arr]
+let arr19 = [1,2,3];
+let arr19_1 : [number, number, ...number[]] = [4,5, ...arr]
 
 // (숙제1) 여러분이 최근에 사먹은 음식의 1. 이름 2. 가격 3. 맛있는지여부를 array 자료에 담아보고 타입지정까지 해보십시오.
-let tes1 : [string, number, boolean] = ['핫도그', 7000, true]
+let testA : [string, number, boolean] = ['핫도그', 7000, true]
 
 // (숙제2) 이렇게 생긴 자료는 타입지정 어떻게 해야할까요?
-let test2 : [string, number, ...boolean[]] = ['동서녹차', 4000, true, false, true, true, false, true]
+let testB : [string, number, ...boolean[]] = ['동서녹차', 4000, true, false, true, true, false, true]
 
 // (숙제3) 함수에 타입지정을 해보도록 합시다.
-function test3(...x : [string, boolean, ...(number|string)[]]) {
+function testC(...x : [string, boolean, ...(number|string)[]]) {
 }
 
 // (숙제4) 다음과 같은 문자/숫자 분류기 함수를 만들어보십시오
-function test4(...x : [...(number|string)[]]){
+function testD(...x : [...(number|string)[]]){
     
     let result : [string[], number[]] = [[],[]]
 
