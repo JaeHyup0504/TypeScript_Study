@@ -3,3 +3,5 @@
 let aa :Dog = "louis"
 
 // console.log(day21)
+
+import { testAge } from "./test"

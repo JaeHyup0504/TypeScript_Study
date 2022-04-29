@@ -2,7 +2,9 @@
     "compilerOptions" : {     
       "target": "es5",     
       "module": "commonjs",
-      "strictNullChecks": true
+      "strictNullChecks": true,
       // null 타입 들어올시 엄격하게 체크
+      "declaration": true,
+      // 자동으로 d.ts 파일에 자동으로 생성됨
     } 
   }
